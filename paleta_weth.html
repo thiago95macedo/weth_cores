@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paleta de Cores: WETH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #F8F9FA; /* Cinza Claro da Paleta */
+      color: #343A40; /* Cinza Escuro da Paleta */
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px; /* Tamanho maior para o título */
+      margin-bottom: 30px;
+      color: #343A40; /* Cinza Escuro para o título */
+    }
+    .logo {
+      width: 250px; /* Tamanho maior para a logo */
+      height: auto;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px; /* Limita a largura máxima do container */
+      margin: 0 auto; /* Centraliza o container */
+    }
+    .color-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .color-box {
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      font-size: 14px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .color-box:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      font-size: 14px;
+      font-weight: bold;
+      color: #343A40; /* Cinza Escuro da Paleta */
+      margin-top: 10px;
+      text-align: center;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    footer a {
+      color: #0056b3; /* Nova Cor Principal */
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="logotipo_weth.png" alt="Logo WETH" class="logo">
+
+  <!-- Título -->
+  <h1>Paleta de Cores: WETH</h1>
+
+  <!-- Container de Cores -->
+  <div class="container">
+    <div class="color-item">
+      <div style="background-color: #0056b3;" class="color-box" onclick="copyColor('#0056b3')">#0056b3</div>
+      <span class="description">Azul Principal - <strong>Cor predominante do sistema, usada em botões principais e links.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #6CB4FF;" class="color-box" onclick="copyColor('#6CB4FF')">#6CB4FF</div>
+      <span class="description">Azul Claro - <strong>Usado para hover states e destaques suaves.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #003C7D;" class="color-box" onclick="copyColor('#003C7D')">#003C7D</div>
+      <span class="description">Azul Escuro - <strong>Para textos sobre fundos claros ou elementos interativos.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #FFA500;" class="color-box" onclick="copyColor('#FFA500')">#FFA500</div>
+      <span class="description">Laranja - <strong>Cor complementar para alertas ou notificações.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #28A745;" class="color-box" onclick="copyColor('#28A745')">#28A745</div>
+      <span class="description">Verde - <strong>Indica sucesso, confirmações ou estados positivos.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #DC3545;" class="color-box" onclick="copyColor('#DC3545')">#DC3545</div>
+      <span class="description">Vermelho - <strong>Usado para erros, avisos ou ações críticas.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #F8F9FA; color: black;" class="color-box" onclick="copyColor('#F8F9FA')">#F8F9FA</div>
+      <span class="description">Cinza Claro - <strong>Fundo geral ou áreas de baixa prioridade.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #E9ECEF; color: black;" class="color-box" onclick="copyColor('#E9ECEF')">#E9ECEF</div>
+      <span class="description">Cinza Médio - <strong>Divisórias, bordas ou fundos de cards.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #343A40;" class="color-box" onclick="copyColor('#343A40')">#343A40</div>
+      <span class="description">Cinza Escuro - <strong>Textos principais ou elementos de navegação.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #212529;" class="color-box" onclick="copyColor('#212529')">#212529</div>
+      <span class="description">Preto - <strong>Textos importantes ou alto contraste.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #FFC107;" class="color-box" onclick="copyColor('#FFC107')">#FFC107</div>
+      <span class="description">Amarelo - <strong>Acentos para chamar atenção em badges ou ícones.</strong></span>
+    </div>
+    <div class="color-item">
+      <div style="background-color: #6F42C1;" class="color-box" onclick="copyColor('#6F42C1')">#6F42C1</div>
+      <span class="description">Roxo - <strong>Elementos decorativos ou menos frequentes.</strong></span>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    Criado por <a href="https://www.thiagomacedo.com.br" target="_blank"><strong>Thiago Macêdo</strong></a>
+  </footer>
+
+  <!-- Função para Copiar Cor -->
+  <script>
+    function copyColor(color) {
+      navigator.clipboard.writeText(color).then(() => {
+        alert(`Código da cor ${color} copiado para a área de transferência!`);
+      });
+    }
+  </script>
+</body>
+</html>
